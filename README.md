@@ -24,6 +24,8 @@ Dispersion ,数据的散布
 Population Variance, 方差  sum((xi-u) * (xi-u)) / N  
 Sample Variance, sum((xi-u) * (xi-u)) / (n-1)  
 我可以理解，如果sample variance使用与population一样的公式，有较大概率Variance被低估。但是也有可能被高估呀？而且为什么分母要改为n-1而不是n-2或者任意的其他一个数字？  
+standard Variance 标准差  在方差基础上做一个平方根操作, 好处是数据的单位变得一致了。  
+
 
 Range,数据集内最大值-最小值  
 Mid-Range，数据集内 (max + min) / 2  
