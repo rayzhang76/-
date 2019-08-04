@@ -5,7 +5,8 @@
 Descriptive, 描述性, 以一些关键性的指标来表述统计特征  
 Inferancial, 推论性, 进行推导计算  
 
-如何用几个数字来描述一个数据集的特性？  
+Descriptive:  
+如何用几个数字来描述一个数据集的特性？ 答案：Central tendency/集中性趋势和Dispersion/散布  
 
 Central Tendency, 集中性趋势描述可以用下面几个指标:  
 平均数 = dataset.mean()，集合内所有样本数值相加然后除以样本个数  
@@ -17,8 +18,12 @@ Central Tendency, 集中性趋势描述可以用下面几个指标:
 population 完整数据集  
 sample 完整数据集的一个子集  
 对应的有sample mean和population mean  
-引入新的公式记述方式  E
+引入新的公式记述方式  Sum  
 
+Dispersion ,数据的散布  
+Population Variance, 方差  sum((xi-u) * (xi-u)) / N  
+Sample Variance, sum((xi-u) * (xi-u)) / (n-1)  
+我可以理解，如果sample variance使用与population一样的公式，有较大概率Variance被低估。但是也有可能被高估呀？而且为什么分母要改为n-1而不是n-2或者任意的其他一个数字？  
 
 Range,数据集内最大值-最小值  
 Mid-Range，数据集内 (max + min) / 2  
