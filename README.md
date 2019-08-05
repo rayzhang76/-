@@ -25,8 +25,20 @@ Population Variance, 方差  sum((xi-u) * (xi-u)) / N
 Sample Variance, sum((xi-u) * (xi-u)) / (n-1)  
 我可以理解，如果sample variance使用与population一样的公式，有较大概率Variance被低估。但是也有可能被高估呀？而且为什么分母要改为n-1而不是n-2或者任意的其他一个数字？  
 standard Variance 标准差  在方差基础上做一个平方根操作, 好处是数据的单位变得一致了。  
+推导population variance方差的简化计算方式：sum(xi * xi)/N - u * u
 
-推到population variance方差的简化计算方式：sum(xi * xi)/N - u * u
+随机变量与二项式:  
+n = 总次数，m = x=1的次数  
+P(x=m) = n!/(m! * (n-m)!) * power(P1,n)  
+这里视频上写的公式似乎出错了  
+抛5次硬币得到一个粗略的概率曲线，抛500万次硬币（近似连续取值）得到一个bell curve或者normal distribution(正态分布)  
+
+当0/1概率不再是55开的时候，公式更加有趣了：  
+P(x=m) = n!/(m! * (n-m)!) * power(P1,m) * power(P0,(n-m))  
+当P0=P1的时候，公式又回到上面例子的形式  
+
+E(X), 随机变量的期望值 = X取值 * P(X)  
+数值上等同于均值(population mean)  
 
 
 Range,数据集内最大值-最小值  
