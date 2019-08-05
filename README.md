@@ -40,6 +40,8 @@ P(x=m) = n!/(m! * (n-m)!) * power(P1,m) * power(P0,(n-m))
 E(X), 随机变量的期望值 = X取值 * P(X)  
 数值上等同于均值(population mean)  
 
+当success几率为P的时候，N次试验后的成功次数的期望值E = p * n  
+（就是这么简单，当然还需要证明一下。绕了一大圈，还用了换元法）  
 
 Range,数据集内最大值-最小值  
 Mid-Range，数据集内 (max + min) / 2  
