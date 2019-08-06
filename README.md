@@ -51,7 +51,8 @@ P(X=k) = power(a,k) / k! * power(e, -a)
 泊松分布的计算涉及到极限计算，这个中间过程涉及到2个简化项，还需要特别复习一下  
 
 大数定律：  
-
+当n-->无穷大的时候，sample mean --> population mean  
+这里要注意一个赌徒谬论，gambler fallacy。大数定律的关键在于infinite而不是均值回归  
 
 
 Range,数据集内最大值-最小值  
